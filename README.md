@@ -8,5 +8,3 @@ SQL (Structured Query Language) is a standardized language used to manage and ma
 - **Industry Demand:** Almost all modern applications use databases.
 - **Data Analysis:** SQL is essential for querying and analyzing data in fields like data science and business intelligence.
 - **Universal Standard:** Works with popular database systems like MySQL, PostgreSQL, SQLite, Microsoft SQL Server, and Oracle.
-
-#### Author - Dhrubaraj Pati
