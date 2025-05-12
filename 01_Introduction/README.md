@@ -54,7 +54,3 @@ DELETE FROM Users WHERE id = 1;
 - Learn **Joins** to combine data from multiple tables
 - Practice **Aggregate Functions** (`COUNT()`, `SUM()`, `AVG()`, etc.)
 - Understand **Indexes** and **Normalization** for performance optimization
-
----
-
-Happy Coding! 🚀
