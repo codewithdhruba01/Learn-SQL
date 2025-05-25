@@ -1,4 +1,7 @@
-## What is SQL?
+## Learn SQL Data Base
+---
+
+### What is SQL?
 SQL (Structured Query Language) is a standardized language used to manage and manipulate relational databases. It allows users to **store, retrieve, update, and delete** data efficiently. SQL is widely used in web applications, data analysis, and backend development.
 
 ---
