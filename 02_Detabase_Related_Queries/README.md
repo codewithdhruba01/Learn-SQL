@@ -98,3 +98,6 @@ Used to retrieve data from multiple tables.
   FROM customers 
   LEFT JOIN orders ON customers.id = orders.customer_id;
   ```
+
+
+  
