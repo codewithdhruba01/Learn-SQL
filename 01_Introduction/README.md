@@ -1,56 +1,65 @@
-# Introduction to SQL
+## 📘 Database Management System (DBMS)
 
-## SQL Components
-SQL is divided into several categories based on its functionality:
-
-### 1. DDL (Data Definition Language) – Defines and modifies database structure
-- `CREATE` – Creates a new database or table
-- `ALTER` – Modifies existing table structure
-- `DROP` – Deletes a table or database
-
-### 2. DML (Data Manipulation Language) – Handles data within tables
-- `INSERT` – Adds new data
-- `UPDATE` – Modifies existing data
-- `DELETE` – Removes data
-
-### 3. DQL (Data Query Language) – Retrieves data
-- `SELECT` – Fetches records from a table
-
-### 4. DCL (Data Control Language) – Manages user permissions
-- `GRANT` – Gives access
-- `REVOKE` – Removes access
-
-### 5. TCL (Transaction Control Language) – Manages transactions
-- `COMMIT` – Saves changes
-- `ROLLBACK` – Reverts changes
+A **Database Management System (DBMS)** is software that helps in **storing, organizing, managing, and retrieving data** efficiently. It provides an interface between the user and the database, allowing data operations such as **insert, update, delete, and fetch** with ease.
 
 ---
 
-## Basic SQL Example
-```sql
--- Create a table
-CREATE TABLE Users (
-    id INT PRIMARY KEY,
-    name VARCHAR(50),
-    email VARCHAR(100)
-);
+### 🎯 Objectives of DBMS
 
--- Insert data
-INSERT INTO Users (id, name, email) VALUES (1, 'John Doe', 'john@example.com');
-
--- Retrieve data
-SELECT * FROM Users;
-
--- Update data
-UPDATE Users SET name = 'Jane Doe' WHERE id = 1;
-
--- Delete data
-DELETE FROM Users WHERE id = 1;
-```
+* Efficient data storage and retrieval
+* Minimize data redundancy (duplicate data)
+* Ensure data security and privacy
+* Allow concurrent access to multiple users
+* Maintain data consistency and integrity
+* Support backup and recovery
 
 ---
 
-## Next Steps
-- Learn **Joins** to combine data from multiple tables
-- Practice **Aggregate Functions** (`COUNT()`, `SUM()`, `AVG()`, etc.)
-- Understand **Indexes** and **Normalization** for performance optimization
+### Components of DBMS
+
+| Component                 | Description                                                                    |
+| ------------------------- | ------------------------------------------------------------------------------ |
+| **DB Engine**             | Handles storing and retrieving data from the database.                         |
+| **Database Schema**       | Defines the logical structure of the database (tables, fields, relationships). |
+| **Query Processor**       | Parses and executes SQL queries.                                               |
+| **Transaction Manager**   | Manages transactions to ensure data consistency.                               |
+| **Storage Manager**       | Controls how data is stored on disk or memory.                                 |
+| **Authorization Manager** | Handles user access and security control.                                      |
+
+---
+
+### Key Features of DBMS
+
+* **Data Abstraction**: Hides physical data structure and shows only relevant information.
+* **Data Independence**: Changes in data structure don't affect application programs.
+* **Concurrency Control**: Multiple users can access the data simultaneously.
+* **Security**: Controls user access to sensitive data.
+* **Backup & Recovery**: Supports data recovery in case of system failure.
+
+---
+
+### Types of DBMS
+
+| Type                        | Description                                                         | Example                     |
+| --------------------------- | ------------------------------------------------------------------- | --------------------------- |
+| **Hierarchical DBMS**       | Data is organized in a tree-like structure (Parent-Child).          | IBM IMS                     |
+| **Network DBMS**            | Supports many-to-many relationships among data.                     | Integrated Data Store (IDS) |
+| **Relational DBMS (RDBMS)** | Data is stored in tables (rows and columns). Most commonly used.    | MySQL, PostgreSQL           |
+| **Object-Oriented DBMS**    | Data is represented as objects (as in object-oriented programming). | db4o, ObjectDB              |
+
+---
+
+### DBMS Software
+
+* **MySQL**
+* **PostgreSQL**
+* **Oracle Database**
+* **Microsoft SQL Server**
+* **SQLite**
+* **MongoDB** (for NoSQL)
+
+---
+
+### ✅ Conclusion
+
+A **DBMS is essential for any system that handles large amounts of data**. It simplifies data management, ensures security, improves performance, and allows multiple users to interact with data reliably.
