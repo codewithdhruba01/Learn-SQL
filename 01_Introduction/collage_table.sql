@@ -1,3 +1,4 @@
+-- student table --
 CREATE DATABASE college;
 
 USE college;
