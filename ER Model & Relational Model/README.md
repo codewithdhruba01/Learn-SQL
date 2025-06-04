@@ -116,4 +116,3 @@ Below is a simple E-R diagram illustrating the relationship between a `Student` 
 - **Entities**: `Student`, `Course`
 - **Relationship**: `enrolls`
 - One student can enroll in multiple courses.
-- One course can be taken by multiple students (many-to-many).
