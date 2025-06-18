@@ -2,7 +2,6 @@
 
 This repository contains a detailed explanation of **Relational Algebra** and **Relational Calculus**, two foundational topics in database theory and query languages.
 
----
 
 ## Relational Algebra (RA)
 
@@ -21,7 +20,6 @@ This repository contains a detailed explanation of **Relational Algebra** and **
 - **Intersection**
 - **Division**
 
----
 
 ## Relational Calculus (RC)
 
