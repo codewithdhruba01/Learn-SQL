@@ -1,11 +1,11 @@
-## 🔹 What is SQL?
+## What is SQL?
 SQL (Structured Query Language) is a standard language used to **create, read, update, and delete** data in relational database systems.
 
 ---
 
-## 🧱 SQL Command Categories
+## SQL Command Categories
 
-### ✅ 1. DDL (Data Definition Language)
+### 1. DDL (Data Definition Language)
 Used to define and modify the **structure** of database objects like tables.
 
 | Command | Description |
@@ -28,7 +28,7 @@ DROP TABLE students;
 
 ---
 
-### ✅ 2. DML (Data Manipulation Language)
+### 2. DML (Data Manipulation Language)
 
 Used to manipulate the **data inside tables**.
 
@@ -48,7 +48,7 @@ DELETE FROM students WHERE id = 1;
 
 ---
 
-### ✅ 3. DQL (Data Query Language)
+### 3. DQL (Data Query Language)
 
 Used to **fetch and filter** data from tables.
 
@@ -72,7 +72,7 @@ HAVING COUNT(*) > 1;
 
 ---
 
-### ✅ 4. DCL (Data Control Language)
+### 4. DCL (Data Control Language)
 
 Used to manage **access permissions** to the database.
 
@@ -90,7 +90,7 @@ REVOKE INSERT ON students FROM 'user1';
 
 ---
 
-### ✅ 5. TCL (Transaction Control Language)
+### 5. TCL (Transaction Control Language)
 
 Used to manage **database transactions** to ensure data integrity.
 
@@ -116,7 +116,7 @@ COMMIT;
 
 ---
 
-## 🧾 Summary
+## Summary
 
 | Category | Purpose             | Commands                                |
 | -------- | ------------------- | --------------------------------------- |
