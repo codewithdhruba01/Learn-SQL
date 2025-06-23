@@ -26,7 +26,6 @@ ALTER TABLE students ADD email VARCHAR(100);
 DROP TABLE students;
 ````
 
----
 
 ### 2. DML (Data Manipulation Language)
 
@@ -46,7 +45,6 @@ UPDATE students SET age = 23 WHERE id = 1;
 DELETE FROM students WHERE id = 1;
 ```
 
----
 
 ### 3. DQL (Data Query Language)
 
@@ -70,7 +68,6 @@ GROUP BY age
 HAVING COUNT(*) > 1;
 ```
 
----
 
 ### 4. DCL (Data Control Language)
 
@@ -88,7 +85,6 @@ GRANT SELECT, INSERT ON students TO 'user1';
 REVOKE INSERT ON students FROM 'user1';
 ```
 
----
 
 ### 5. TCL (Transaction Control Language)
 
@@ -114,7 +110,6 @@ ROLLBACK TO sp1;
 COMMIT;
 ```
 
----
 
 ## Summary
 
