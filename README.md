@@ -13,7 +13,6 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Types of DBMS (Hierarchical, Network, Relational, Object-Oriented)
 -  DBMS vs RDBMS
 
----
 
 ## 📦 Phase 2: DBMS Architecture & Data Models
 
@@ -23,7 +22,6 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  DBMS Architecture: 1-Tier, 2-Tier, 3-Tier
 -  Schema & Instance: Internal, Conceptual, External
 
----
 
 ## 📦 Phase 3: ER Model & Relational Model
 
@@ -35,7 +33,6 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Mapping ER to Relational Tables
 -  Keys: Primary, Foreign, Candidate, Super
 
----
 
 ## 📦 Phase 4: Relational Algebra & Relational Calculus
 
@@ -46,7 +43,6 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 
 📌 Useful for competitive exams and theoretical understanding.
 
----
 
 ## 📦 Phase 5: SQL (Structured Query Language)
 
@@ -57,8 +53,6 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  DQL: `SELECT`, `WHERE`, `GROUP BY`, `HAVING`
 -  DCL: `GRANT`, `REVOKE`
 -  TCL: `COMMIT`, `ROLLBACK`, `SAVEPOINT`
-
----
 
 ## 📦 Phase 6: Normalization & Functional Dependencies
 
@@ -71,7 +65,6 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 
 💡 Practice normalization with sample tables.
 
----
 
 ## 📦 Phase 7: Transactions & Concurrency Control
 
@@ -82,7 +75,6 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Serializability: Conflict, View
 -  Deadlock Handling: Wait-Die, Wound-Wait
 
----
 
 ## 📦 Phase 8: Storage, File Organization & Indexing
 
@@ -92,7 +84,6 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Indexing: Single-Level, Multi-Level, B+ Trees
 -  Buffer Management
 
----
 
 ## 📦 Phase 9: Security & Authorization
 
@@ -102,7 +93,6 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Data Encryption
 -  Backup & Recovery (Full, Incremental, Differential)
 
----
 
 ## 📦 Phase 10: Projects and Practice
 
