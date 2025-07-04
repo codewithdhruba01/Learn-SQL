@@ -1,20 +1,20 @@
 # 📘 Chapter: Normalization & Functional Dependencies
 
-## 🧩 Functional Dependencies
+## Functional Dependencies
 
 Functional dependencies (FDs) describe the relationship between attributes in a relational database. An FD, denoted as `X → Y`, implies that if two tuples have the same value for attribute X, they must also have the same value for attribute Y.
 
-### ✅ Key Concepts
+### Key Concepts
 - **Trivial FD:** `A → A` or `AB → A` (always true).
 - **Non-Trivial FD:** `A → B` where B is not a subset of A.
 - **Transitive FD:** If `A → B` and `B → C`, then `A → C`.
 - **Closure of Attribute Set:** Set of attributes that can be functionally determined from a given set.
 
-## 📚 Normalization
+## Normalization
 
 Normalization is the process of organizing data in a database to reduce redundancy and improve data integrity.
 
-### 🔢 Normal Forms
+### Normal Forms
 
 | Normal Form | Description | Goal |
 |-------------|-------------|------|
@@ -25,7 +25,7 @@ Normalization is the process of organizing data in a database to reduce redundan
 | **4NF (Fourth Normal Form)** | Removes multi-valued dependencies | Eliminates independent multivalued facts |
 | **5NF (Fifth Normal Form)** | Removes join dependencies | Ensures lossless join decomposition |
 
-### 🔍 Example
+### Example
 
 Consider a table:
 
@@ -38,7 +38,7 @@ This table violates 1NF because it has multiple rows for the same `StudentID`. N
 
 ---
 
-## 💡 Why Normalize?
+## Why Normalize?
 
 - Reduces data redundancy
 - Prevents update anomalies
