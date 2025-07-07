@@ -5,7 +5,7 @@ This document provides a clear and concise explanation of **DBMS Architecture** 
 
 ---
 
-## 🏗️ DBMS Architecture (3-Level Architecture)
+## DBMS Architecture (3-Level Architecture)
 
 The **3-level architecture** of a DBMS defines how data is viewed, processed, and stored. It improves **data abstraction**, **security**, and **independence**.
 
@@ -25,14 +25,14 @@ The **3-level architecture** of a DBMS defines how data is viewed, processed, an
 - Ensures **data privacy and security**.
 - Users can access only relevant data.
 
-### ✅ Benefits:
+### Benefits:
 - Data Abstraction
 - Security & Privacy
 - Data Independence (logical & physical)
 
 ---
 
-## 🧩 Data Models in DBMS
+## Data Models in DBMS
 
 Data Models define how data is **logically structured**, **stored**, and **accessed** in a DBMS.
 
