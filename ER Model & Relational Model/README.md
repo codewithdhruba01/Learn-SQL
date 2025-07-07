@@ -4,7 +4,7 @@ This document provides a clear and concise explanation of **DBMS Architecture**,
 
 ---
 
-## 🏗️ DBMS Architecture (3-Level Architecture)
+## DBMS Architecture (3-Level Architecture)
 
 The **3-level architecture** of a DBMS defines how data is viewed, processed, and stored. It improves **data abstraction**, **security**, and **independence**.
 
@@ -24,14 +24,14 @@ The **3-level architecture** of a DBMS defines how data is viewed, processed, an
 - Ensures **data privacy and security**.
 - Users can access only relevant data.
 
-### ✅ Benefits:
+### Benefits:
 - Data Abstraction
 - Security & Privacy
 - Data Independence (logical & physical)
 
 ---
 
-## 🧩 Data Models in DBMS
+## Data Models in DBMS
 
 Data Models define how data is **logically structured**, **stored**, and **accessed** in a DBMS.
 
@@ -51,14 +51,14 @@ Data Models define how data is **logically structured**, **stored**, and **acces
 - Each table has rows (tuples) and columns (attributes).
 - **SQL** is based on this model.
 
-#### 🧾 Key Concepts:
+#### Key Concepts:
 - **Relation** = Table
 - **Attribute** = Column
 - **Tuple** = Row
 - **Primary Key** = Unique ID
 - **Foreign Key** = Refers to another table’s primary key
 
-#### 🧪 Example Tables:
+#### Example Tables:
 
 **Student Table**
 
@@ -85,7 +85,7 @@ Data Models define how data is **logically structured**, **stored**, and **acces
 
 ### 🔸 4. Entity-Relationship (ER) Model
 
-#### 🧾 Key Components:
+#### Key Components:
 - **Entity**: Real-world object (e.g., Student)
 - **Entity Set**: Group of similar entities
 - **Attribute**: Property of an entity (e.g., Name, Age)
