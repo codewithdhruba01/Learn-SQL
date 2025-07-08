@@ -1,10 +1,10 @@
-## 📘 Database Management System (DBMS)
+## Database Management System (DBMS)
 
 A **Database Management System (DBMS)** is software that helps in **storing, organizing, managing, and retrieving data** efficiently. It provides an interface between the user and the database, allowing data operations such as **insert, update, delete, and fetch** with ease.
 
 ---
 
-### 🎯 Objectives of DBMS
+### Objectives of DBMS
 
 * Efficient data storage and retrieval
 * Minimize data redundancy (duplicate data)
