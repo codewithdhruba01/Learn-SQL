@@ -1,4 +1,4 @@
-# 📘 DBMS Architecture & Data Models
+## DBMS Architecture & Data Models
 
 This document provides a clear and concise explanation of **DBMS Architecture**, **Entity-Relationship Model**, and **Relational Model** used in database systems. Ideal for students, developers, and interview preparation.
 
