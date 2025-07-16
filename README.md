@@ -111,7 +111,7 @@ MySQL · SQLite · PostgreSQL · phpMyAdmin · MySQL Workbench
 - YouTube: Gate Smashers, Knowledge Gate
 - Book: *Database System Concepts* by Korth
 
-### 🧪 **Practice Platforms**
+### **Practice Platforms**
 - [LeetCode SQL](https://leetcode.com/problemset/database/)
 - [HackerRank SQL](https://www.hackerrank.com/domains/tutorials/10-days-of-sql)
 - [W3Schools SQL](https://www.w3schools.com/sql/)
