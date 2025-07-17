@@ -1,4 +1,4 @@
-# 📘 Chapter: Normalization & Functional Dependencies
+## Chapter: Normalization & Functional Dependencies
 
 ## Functional Dependencies
 
