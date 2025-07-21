@@ -107,7 +107,7 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 ### 🛠️ **Tools:**  
 MySQL · SQLite · PostgreSQL · phpMyAdmin · MySQL Workbench
 
-### 📚 **Recommended Resources**
+### **Recommended Resources**
 - YouTube: Gate Smashers, Knowledge Gate
 - Book: *Database System Concepts* by Korth
 
