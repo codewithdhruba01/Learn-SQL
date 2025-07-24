@@ -12,8 +12,8 @@ It consists of multiple steps that **must execute together** to keep the data ac
 1. Debit ₹5000 from Account A
 2. Credit ₹5000 to Account B
 
-✅ If both steps succeed, the transaction **commits** (changes are saved).
-❌ If any step fails, the transaction **rolls back** (no changes are saved).
+ If both steps succeed, the transaction **commits** (changes are saved).
+ If any step fails, the transaction **rolls back** (no changes are saved).
 
 💡 **Key Point:** Transactions keep the data *consistent*.
 
@@ -78,7 +78,7 @@ Using **locks** prevents conflicts between transactions.
   * **Growing Phase:** Transaction acquires all the locks it needs.
   * **Shrinking Phase:** Transaction releases the locks.
 
-✅ Two-phase locking ensures transactions are **serializable** (executed one after another logically).
+ Two-phase locking ensures transactions are **serializable** (executed one after another logically).
 
 ---
 
