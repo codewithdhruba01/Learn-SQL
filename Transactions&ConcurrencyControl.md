@@ -15,7 +15,7 @@ It consists of multiple steps that **must execute together** to keep the data ac
  If both steps succeed, the transaction **commits** (changes are saved).
  If any step fails, the transaction **rolls back** (no changes are saved).
 
-💡 **Key Point:** Transactions keep the data *consistent*.
+ **Key Point:** Transactions keep the data *consistent*.
 
 ---
 
