@@ -39,7 +39,6 @@ It consists of multiple steps that **must execute together** to keep the data ac
 
 * Once a transaction is committed, the changes are permanent, even if the system crashes.
 
----
 
 ## 🟢 3. What is Concurrency?
 
@@ -52,7 +51,6 @@ It consists of multiple steps that **must execute together** to keep the data ac
 
 ⚠️ Without proper concurrency control, the data could become inconsistent or incorrect.
 
----
 
 ## ⚠️ 4. Problems That Happen Due to Concurrency
 
@@ -63,7 +61,6 @@ It consists of multiple steps that **must execute together** to keep the data ac
 | **Non-repeatable Read** | A transaction reads the same row twice and gets different data because another transaction updated it in between.        |
 | **Phantom Read**        | A transaction executes the same query twice but sees new rows the second time because another transaction inserted them. |
 
----
 
 ## 🛡️ 5. Concurrency Control Techniques
 
@@ -96,7 +93,6 @@ Using **locks** prevents conflicts between transactions.
 * If validation fails, the transaction rolls back.
 * Best used when conflicts are rare.
 
----
 
 ## 🧠 6. Isolation Levels (SQL Standards)
 
