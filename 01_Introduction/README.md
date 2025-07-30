@@ -13,7 +13,6 @@ A **Database Management System (DBMS)** is software that helps in **storing, org
 * Maintain data consistency and integrity
 * Support backup and recovery
 
----
 
 ### Components of DBMS
 
@@ -26,7 +25,6 @@ A **Database Management System (DBMS)** is software that helps in **storing, org
 | **Storage Manager**       | Controls how data is stored on disk or memory.                                 |
 | **Authorization Manager** | Handles user access and security control.                                      |
 
----
 
 ### Key Features of DBMS
 
@@ -36,7 +34,6 @@ A **Database Management System (DBMS)** is software that helps in **storing, org
 * **Security**: Controls user access to sensitive data.
 * **Backup & Recovery**: Supports data recovery in case of system failure.
 
----
 
 ### Types of DBMS
 
