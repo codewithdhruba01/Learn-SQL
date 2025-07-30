@@ -44,7 +44,6 @@ A **Database Management System (DBMS)** is software that helps in **storing, org
 | **Relational DBMS (RDBMS)** | Data is stored in tables (rows and columns). Most commonly used.    | MySQL, PostgreSQL           |
 | **Object-Oriented DBMS**    | Data is represented as objects (as in object-oriented programming). | db4o, ObjectDB              |
 
----
 
 ### DBMS Software
 
@@ -55,7 +54,6 @@ A **Database Management System (DBMS)** is software that helps in **storing, org
 * **SQLite**
 * **MongoDB** (for NoSQL)
 
----
 
 ### ✅ Conclusion
 
