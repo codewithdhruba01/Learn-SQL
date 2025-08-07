@@ -1,4 +1,3 @@
-
 # 📘 DBMS Architecture & Data Models
 
 This document provides a clear and concise explanation of **DBMS Architecture** and various **Data Models** used in database systems. Ideal for students, developers, and interview preparation.
