@@ -93,7 +93,6 @@ Example:
 | **ER Model**     | Entities and Relationships (Visual) |
 | **Object-Oriented** | OOP-based data modeling |
 
----
 
 ## 📚 Author Notes
 - This document is part of DBMS learning resources.
