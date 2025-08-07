@@ -30,7 +30,6 @@ The **3-level architecture** of a DBMS defines how data is viewed, processed, an
 - Security & Privacy
 - Data Independence (logical & physical)
 
----
 
 ## Data Models in DBMS
 
@@ -82,7 +81,6 @@ Example:
 - Combines data + behavior.
 - Supports **inheritance**, **encapsulation**, etc.
 
----
 
 ## 📌 Summary
 
