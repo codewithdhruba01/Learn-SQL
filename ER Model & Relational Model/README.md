@@ -109,6 +109,3 @@ Below is a simple E-R diagram illustrating the relationship between a `Student` 
 (Relationship)
 
 ```
-
-- **Entities**: `Student`, `Course`
-- **Relationship**: `enrolls`
