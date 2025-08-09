@@ -2,7 +2,6 @@
 
 This document provides a clear and concise explanation of **DBMS Architecture**, **Entity-Relationship Model**, and **Relational Model** used in database systems. Ideal for students, developers, and interview preparation.
 
----
 
 ## DBMS Architecture (3-Level Architecture)
 
@@ -29,7 +28,6 @@ The **3-level architecture** of a DBMS defines how data is viewed, processed, an
 - Security & Privacy
 - Data Independence (logical & physical)
 
----
 
 ## Data Models in DBMS
 
@@ -81,7 +79,6 @@ Data Models define how data is **logically structured**, **stored**, and **acces
 | 101        | C101      |
 | 102        | C102      |
 
----
 
 ### 🔸 4. Entity-Relationship (ER) Model
 
