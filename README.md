@@ -65,7 +65,6 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 
 💡 Practice normalization with sample tables.
 
-
 ## 📦 Phase 7: Transactions & Concurrency Control
 
 **Goal:** Ensure safe and consistent data access in multi-user environments.
@@ -92,7 +91,6 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Access Control and Roles
 -  Data Encryption
 -  Backup & Recovery (Full, Incremental, Differential)
-
 
 ## 📦 Phase 10: Projects and Practice
 
