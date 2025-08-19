@@ -11,8 +11,6 @@ To achieve this, DBMS uses:
 - **Indexing** → how DBMS finds data quickly.  
 - **Buffer Management** → how data is managed between **disk** and **main memory**.
 
----
-
 ## 🔹 File Organization
 File organization defines **how records are arranged in the file** on disk.
 
@@ -24,8 +22,6 @@ File organization defines **how records are arranged in the file** on disk.
 
 ✅ **Best for:** When insertions are frequent, but queries are rare.  
 
----
-
 ### 2. Sequential / Sorted File Organization
 - Records are stored in **sorted order** (usually on some key).  
 - Searching using **binary search** is very fast.  
@@ -34,8 +30,6 @@ File organization defines **how records are arranged in the file** on disk.
 
 ✅ **Best for:** Range queries and reports (like "students with marks between 70–90").  
 
----
-
 ### 3. Hashed File Organization
 - Uses a **hash function** on a key (e.g., `hash(ID)`) → decides where record will go.  
 - Very fast for **equality search** (like `WHERE ID = 1001`).  
@@ -43,8 +37,6 @@ File organization defines **how records are arranged in the file** on disk.
 - Example: Banking system where accounts are searched by **account number**.  
 
 ✅ **Best for:** Exact match queries.  
-
----
 
 ## 🔹 Indexing
 Indexes are like **book indexes** → they help DBMS find records **without scanning the whole file**.
@@ -56,8 +48,6 @@ Indexes are like **book indexes** → they help DBMS find records **without scan
 
 ⚠️ Limitation: If data is very large, the index file itself becomes huge.
 
----
-
 ### 2. Multi-Level Index
 - Index on **index**.  
 - First-level index points to second-level, second-level points to actual data.  
@@ -68,8 +58,6 @@ Example:
 - First-level index: A–E, F–J, K–O …  
 - Second-level: actual roll numbers in that group.  
 
----
-
 ### 3. B+ Tree Indexing
 - Most widely used in DBMS (used in MySQL, Oracle, etc.).  
 - **Balanced tree structure** → keeps height small.  
@@ -79,8 +67,6 @@ Example:
   - **Range queries** (`ID between 100 and 200`).  
 
 ✅ Very efficient for both exact and range searches.
-
----
 
 ## 🔹 Buffer Management
 Now, how DBMS handles **memory vs disk**:
@@ -100,7 +86,6 @@ Now, how DBMS handles **memory vs disk**:
 
 ✅ Buffer management is crucial → reduces costly disk I/O operations.  
 
----
 
 ## 📊 Summary Table
 
