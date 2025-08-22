@@ -17,7 +17,6 @@ It consists of multiple steps that **must execute together** to keep the data ac
 
  **Key Point:** Transactions keep the data *consistent*.
 
----
 
 ## 2. ACID Properties (4 Rules Every Transaction Must Follow)
 
@@ -77,14 +76,12 @@ Using **locks** prevents conflicts between transactions.
 
  Two-phase locking ensures transactions are **serializable** (executed one after another logically).
 
----
 
 ### 🔹 Timestamp Ordering
 
 * Each transaction gets a unique timestamp.
 * The database uses timestamps to decide the order of execution so conflicts can be avoided.
 
----
 
 ### 🔹 Optimistic Concurrency Control
 
@@ -105,7 +102,6 @@ Using **locks** prevents conflicts between transactions.
 | **Repeatable Read**  | Prevents dirty and non-repeatable reads       |
 | **Serializable**     | Prevents all problems including phantom reads |
 
----
 
 ## ✅ Conclusion
 
