@@ -98,5 +98,3 @@ Now, how DBMS handles **memory vs disk**:
 | **Multi-Level Index**| Index on index                           | Large datasets |
 | **B+ Tree Index**    | Balanced tree, supports ranges           | DBMS standard |
 | **Buffer Management**| Manages RAM–Disk movement of pages       | Speeds up access |
-
----
