@@ -1,4 +1,4 @@
-## DBMS Architecture & Data Models
+# DBMS Architecture & Data Models
 
 This document provides a clear and concise explanation of **DBMS Architecture**, **Entity-Relationship Model**, and **Relational Model** used in database systems. Ideal for students, developers, and interview preparation.
 
@@ -55,6 +55,8 @@ Data Models define how data is **logically structured**, **stored**, and **acces
 - **Tuple** = Row
 - **Primary Key** = Unique ID
 - **Foreign Key** = Refers to another table’s primary key
+  
+---
 
 #### Example Tables:
 
