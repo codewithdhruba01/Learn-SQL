@@ -66,6 +66,8 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 
 💡 Practice normalization with sample tables.
 
+---
+
 ## 📦 Phase 7: Transactions & Concurrency Control
 
 **Goal:** Ensure safe and consistent data access in multi-user environments.
@@ -84,6 +86,7 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Indexing: Single-Level, Multi-Level, B+ Trees
 -  Buffer Management
 
+---
 
 ## 📦 Phase 9: Security & Authorization
 
