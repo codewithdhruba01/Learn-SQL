@@ -2,8 +2,6 @@
 
 This roadmap will guide you through the entire Database Management System (DBMS) journey — from basic concepts to advanced topics, including real-world projects and practice.
 
----
-
 ## 🔰 Phase 1: Introduction to DBMS
 
 **Goal:** Understand what DBMS is and why it's important.
