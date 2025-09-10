@@ -2,8 +2,6 @@
 
 This document provides a clear and concise explanation of **DBMS Architecture** and various **Data Models** used in database systems. Ideal for students, developers, and interview preparation.
 
----
-
 ## DBMS Architecture (3-Level Architecture)
 
 The **3-level architecture** of a DBMS defines how data is viewed, processed, and stored. It improves **data abstraction**, **security**, and **independence**.
