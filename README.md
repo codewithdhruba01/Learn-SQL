@@ -11,6 +11,8 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Types of DBMS (Hierarchical, Network, Relational, Object-Oriented)
 -  DBMS vs RDBMS
 
+-  ---
+
 ## 📦 Phase 2: DBMS Architecture & Data Models
 
 **Goal:** Learn how data is organized and accessed internally.
@@ -18,6 +20,8 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Data Models: Relational, Hierarchical, Network
 -  DBMS Architecture: 1-Tier, 2-Tier, 3-Tier
 -  Schema & Instance: Internal, Conceptual, External
+
+---
 
 
 ## 📦 Phase 3: ER Model & Relational Model
