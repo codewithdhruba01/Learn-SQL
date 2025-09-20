@@ -44,6 +44,7 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 
 📌 Useful for competitive exams and theoretical understanding.
 
+---
 
 ## 📦 Phase 5: SQL (Structured Query Language)
 
@@ -55,6 +56,8 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  DCL: `GRANT`, `REVOKE`
 -  TCL: `COMMIT`, `ROLLBACK`, `SAVEPOINT`
 
+---
+
 ## 📦 Phase 6: Normalization & Functional Dependencies
 
 **Goal:** Minimize data redundancy and ensure data consistency.
@@ -65,6 +68,8 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Decomposition (Lossless, Dependency Preserving)
 
 💡 Practice normalization with sample tables.
+
+---
 
 
 ## 📦 Phase 7: Transactions & Concurrency Control
@@ -94,6 +99,8 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Access Control and Roles
 -  Data Encryption
 -  Backup & Recovery (Full, Incremental, Differential)
+
+---
 
 ## 📦 Phase 10: Projects and Practice
 
