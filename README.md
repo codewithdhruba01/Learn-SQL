@@ -112,12 +112,16 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 - Library Management System
 - E-Commerce Product Database
 
+  ---
+
 ### 🛠️ **Tools:**  
 MySQL · SQLite · PostgreSQL · phpMyAdmin · MySQL Workbench
 
 ### **Recommended Resources**
 - YouTube: Gate Smashers, Knowledge Gate
 - Book: *Database System Concepts* by Korth
+
+---
 
 ### **Practice Platforms**
 - [LeetCode SQL](https://leetcode.com/problemset/database/)
