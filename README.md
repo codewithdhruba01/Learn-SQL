@@ -2,7 +2,7 @@
 
 This roadmap will guide you through the entire Database Management System (DBMS) journey — from basic concepts to advanced topics, including real-world projects and practice.
 
-## 🔰 Phase 1: Introduction to DBMS
+## Phase 1: Introduction to DBMS
 
 **Goal:** Understand what DBMS is and why it's important.
 
@@ -11,7 +11,7 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Types of DBMS (Hierarchical, Network, Relational, Object-Oriented)
 -  DBMS vs RDBMS
 
-## 📦 Phase 2: DBMS Architecture & Data Models
+## Phase 2: DBMS Architecture & Data Models
 
 **Goal:** Learn how data is organized and accessed internally.
 
@@ -20,7 +20,7 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Schema & Instance: Internal, Conceptual, External
 
 
-## 📦 Phase 3: ER Model & Relational Model
+## Phase 3: ER Model & Relational Model
 
 **Goal:** Design databases using Entity-Relationship modeling.
 
@@ -31,7 +31,7 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Keys: Primary, Foreign, Candidate, Super
 
 
-## 📦 Phase 4: Relational Algebra & Relational Calculus
+## Phase 4: Relational Algebra & Relational Calculus
 
 **Goal:** Understand the mathematical foundation of database queries.
 
@@ -42,7 +42,7 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 
 ---
 
-## 📦 Phase 5: SQL (Structured Query Language)
+## Phase 5: SQL (Structured Query Language)
 
 **Goal:** Learn to interact with databases using SQL.
 
