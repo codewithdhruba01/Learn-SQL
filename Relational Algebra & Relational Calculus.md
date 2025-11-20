@@ -29,6 +29,6 @@ This repository contains a detailed explanation of **Relational Algebra** and **
 - **Tuple Relational Calculus (TRC)**: `{ t | P(t) }`
 - **Domain Relational Calculus (DRC)**: `{ <x1, x2> | P(x1, x2) }`
 
-### 📌 Example in TRC:
+### Example in TRC:
 ```sql
 { t.Name | Student(t) ∧ t.Age > 18 }
