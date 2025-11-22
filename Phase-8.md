@@ -1,6 +1,6 @@
-# 📘 Storage, File Organization & Indexing in DBMS
+# Storage, File Organization & Indexing in DBMS
 
-## 🎯 Goal
+## Goal
 A **DBMS (Database Management System)** stores huge amounts of data efficiently.  
 Its **two main goals** are:
 1. **Efficient storage** (save space).
@@ -36,9 +36,9 @@ File organization defines **how records are arranged in the file** on disk.
 - Not good for **range queries** (like "marks between 70–90").  
 - Example: Banking system where accounts are searched by **account number**.  
 
-✅ **Best for:** Exact match queries.  
+**Best for:** Exact match queries.  
 
-## 🔹 Indexing
+## Indexing
 Indexes are like **book indexes** → they help DBMS find records **without scanning the whole file**.
 
 ### 1. Single-Level Index
@@ -68,7 +68,7 @@ Example:
 
 Very efficient for both exact and range searches.
 
-## 🔹 Buffer Management
+## Buffer Management
 Now, how DBMS handles **memory vs disk**:
 
 - **Disk** is large but **slow**.  
@@ -84,10 +84,10 @@ Now, how DBMS handles **memory vs disk**:
    - **MRU, FIFO, Clock** also possible.  
 3. Modified pages in buffer must be written back to disk → called **dirty pages**.
 
-✅ Buffer management is crucial → reduces costly disk I/O operations.  
+Buffer management is crucial → reduces costly disk I/O operations.  
 
 
-## 📊 Summary Table
+## Summary Table
 
 | Concept              | Main Idea                                | Best Use Case |
 |----------------------|-------------------------------------------|---------------|
