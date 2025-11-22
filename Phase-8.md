@@ -11,7 +11,7 @@ To achieve this, DBMS uses:
 - **Indexing** → how DBMS finds data quickly.  
 - **Buffer Management** → how data is managed between **disk** and **main memory**.
 
-## 🔹 File Organization
+## File Organization
 File organization defines **how records are arranged in the file** on disk.
 
 ### 1. Heap (Unordered) File Organization
@@ -20,7 +20,7 @@ File organization defines **how records are arranged in the file** on disk.
 - Searching is **slow** (must scan all records).  
 - Example: Temporary data, log files.  
 
-✅ **Best for:** When insertions are frequent, but queries are rare.  
+**Best for:** When insertions are frequent, but queries are rare.  
 
 ### 2. Sequential / Sorted File Organization
 - Records are stored in **sorted order** (usually on some key).  
@@ -28,7 +28,7 @@ File organization defines **how records are arranged in the file** on disk.
 - Insertions and deletions are **slow** (because file must remain sorted).  
 - Example: Student records sorted by roll number.  
 
-✅ **Best for:** Range queries and reports (like "students with marks between 70–90").  
+**Best for:** Range queries and reports (like "students with marks between 70–90").  
 
 ### 3. Hashed File Organization
 - Uses a **hash function** on a key (e.g., `hash(ID)`) → decides where record will go.  
@@ -46,7 +46,7 @@ Indexes are like **book indexes** → they help DBMS find records **without scan
 - Example: Index on roll numbers → stores `(roll_no, pointer_to_record)`.  
 - Searching becomes faster than linear scan.  
 
-⚠️ Limitation: If data is very large, the index file itself becomes huge.
+Limitation: If data is very large, the index file itself becomes huge.
 
 ### 2. Multi-Level Index
 - Index on **index**.  
@@ -66,7 +66,7 @@ Example:
   - **Equality search** (`ID = 105`).  
   - **Range queries** (`ID between 100 and 200`).  
 
-✅ Very efficient for both exact and range searches.
+Very efficient for both exact and range searches.
 
 ## 🔹 Buffer Management
 Now, how DBMS handles **memory vs disk**:
