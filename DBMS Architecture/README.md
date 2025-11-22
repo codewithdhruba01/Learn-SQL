@@ -11,13 +11,13 @@ The **3-level architecture** of a DBMS defines how data is viewed, processed, an
 - Deals with low-level storage details.
 - **Invisible to end-users**.
 
-### 🔹 2. Conceptual Level (Logical Level)
+### 2. Conceptual Level (Logical Level)
 - Provides the **logical structure** of the entire database.
 - Defines tables, data types, relationships, constraints.
 - Hides physical storage details from users.
 - Acts as a bridge between internal and external levels.
 
-### 🔹 3. External Level (View Level)
+### 3. External Level (View Level)
 - Provides a **customized view** of the database to each user or application.
 - Ensures **data privacy and security**.
 - Users can access only relevant data.
@@ -32,7 +32,7 @@ The **3-level architecture** of a DBMS defines how data is viewed, processed, an
 
 Data Models define how data is **logically structured**, **stored**, and **accessed** in a DBMS.
 
-### 🔸 1. Hierarchical Model
+### 1. Hierarchical Model
 - Organizes data in a **tree-like (parent-child)** structure.
 - One parent → many children; child has only one parent.
 - Suitable for **one-to-many** relationships.
@@ -45,12 +45,12 @@ Company
 
 ```
 
-### 🔸 2. Network Model
+### 2. Network Model
 - Uses **graph-like structure**.
 - A record can have **multiple parent and child relationships**.
 - Good for handling **many-to-many** relationships.
 
-### 🔸 3. Relational Model (Most Widely Used)
+### 3. Relational Model (Most Widely Used)
 - Represents data as **tables (relations)**.
 - Each table has rows (tuples) and columns (attributes).
 - **SQL** is based on this model.
@@ -61,7 +61,7 @@ Example:
 | 1          | Aman  | 20  |
 | 2          | Riya  | 22  |
 
-### 🔸 4. Entity-Relationship (ER) Model
+### 4. Entity-Relationship (ER) Model
 - Represents data using **entities** and **relationships**.
 - Used in **database design phase**.
 - Visualized with **E-R Diagrams**.
@@ -73,7 +73,7 @@ Example:
 
 ```
 
-### 🔸 5. Object-Oriented Model
+### 5. Object-Oriented Model
 - Represents data as **objects** (like in OOP).
 - Combines data + behavior.
 - Supports **inheritance**, **encapsulation**, etc.
