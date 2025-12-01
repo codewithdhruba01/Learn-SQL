@@ -40,8 +40,6 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 
 > Useful for competitive exams and theoretical understanding.
 
----
-
 ## Phase 5: SQL (Structured Query Language)
 
 **Goal:** Learn to interact with databases using SQL.
@@ -109,7 +107,6 @@ MySQL · SQLite · PostgreSQL · phpMyAdmin · MySQL Workbench
 - YouTube: Gate Smashers, Knowledge Gate
 - Book: *Database System Concepts* by Korth
 
----
 
 ### **Practice Platforms**
 - [LeetCode SQL](https://leetcode.com/problemset/database/)
