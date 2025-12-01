@@ -38,7 +38,7 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  Relational Algebra: SELECT, PROJECT, UNION, JOIN, DIVIDE, etc.
 -  Relational Calculus: Tuple (TRC) and Domain (DRC)
 
-📌 Useful for competitive exams and theoretical understanding.
+> Useful for competitive exams and theoretical understanding.
 
 ---
 
@@ -52,9 +52,7 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  DCL: `GRANT`, `REVOKE`
 -  TCL: `COMMIT`, `ROLLBACK`, `SAVEPOINT`
 
----
-
-## 📦 Phase 6: Normalization & Functional Dependencies
+## Phase 6: Normalization & Functional Dependencies
 
 **Goal:** Minimize data redundancy and ensure data consistency.
 
@@ -63,7 +61,7 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 -  BCNF, 4NF
 -  Decomposition (Lossless, Dependency Preserving)
 
-💡 Practice normalization with sample tables.
+> Practice normalization with sample tables.
 
 
 ## Phase 7: Transactions & Concurrency Control
