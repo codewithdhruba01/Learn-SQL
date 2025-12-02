@@ -55,8 +55,6 @@ Data Models define how data is **logically structured**, **stored**, and **acces
 - **Tuple** = Row
 - **Primary Key** = Unique ID
 - **Foreign Key** = Refers to another table’s primary key
-  
----
 
 #### Example Tables:
 
@@ -82,7 +80,7 @@ Data Models define how data is **logically structured**, **stored**, and **acces
 | 102        | C102      |
 
 
-### 🔸 4. Entity-Relationship (ER) Model
+### 4. Entity-Relationship (ER) Model
 
 #### Key Components:
 - **Entity**: Real-world object (e.g., Student)
@@ -91,7 +89,7 @@ Data Models define how data is **logically structured**, **stored**, and **acces
 - **Relationship**: Association between entities (e.g., Enrolls)
 - **Primary Key**: Uniquely identifies an entity
 
-#### 🔷 Example E-R Diagram:
+#### Example E-R Diagram:
 
 
 Below is a simple E-R diagram illustrating the relationship between a `Student` and a `Course`:
