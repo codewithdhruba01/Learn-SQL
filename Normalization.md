@@ -36,7 +36,6 @@ Consider a table:
 
 This table violates 1NF because it has multiple rows for the same `StudentID`. Normalization would split this into separate tables for **Students**, **Courses**, and **Instructors** with proper keys and references.
 
----
 
 ## Why Normalize?
 
