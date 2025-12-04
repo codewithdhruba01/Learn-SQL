@@ -54,7 +54,3 @@ A **Database Management System (DBMS)** is software that helps in **storing, org
 * **SQLite**
 * **MongoDB** (for NoSQL)
 
-
-### ✅ Conclusion
-
-A **DBMS is essential for any system that handles large amounts of data**. It simplifies data management, ensures security, improves performance, and allows multiple users to interact with data reliably.
