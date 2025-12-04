@@ -1,4 +1,4 @@
-# 📘 DBMS Architecture & Data Models
+# DBMS Architecture & Data Models
 
 This document provides a clear and concise explanation of **DBMS Architecture** and various **Data Models** used in database systems. Ideal for students, developers, and interview preparation.
 
@@ -6,7 +6,7 @@ This document provides a clear and concise explanation of **DBMS Architecture** 
 
 The **3-level architecture** of a DBMS defines how data is viewed, processed, and stored. It improves **data abstraction**, **security**, and **independence**.
 
-### 🔹 1. Internal Level (Physical Level)
+### 1. Internal Level (Physical Level)
 - Describes **how data is physically stored** in the database (e.g., indexing, file structures).
 - Deals with low-level storage details.
 - **Invisible to end-users**.
@@ -89,9 +89,3 @@ Example:
 | **Relational**   | Table-based (Most Common) |
 | **ER Model**     | Entities and Relationships (Visual) |
 | **Object-Oriented** | OOP-based data modeling |
-
-
-## 📚 Author Notes
-- This document is part of DBMS learning resources.
-- Suitable for academic and practical usage.
-- Feel free to fork or modify for your own projects.
