@@ -79,7 +79,7 @@ Example:
 - Supports **inheritance**, **encapsulation**, etc.
 
 
-## 📌 Summary
+## Summary
 
 | Concept         | Description |
 |------------------|-------------|
