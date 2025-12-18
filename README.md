@@ -161,6 +161,36 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 - Student Information System
 - Real-World Business Intelligence Queries
 
+#### **17_Window_Functions**
+- ROW_NUMBER(), RANK(), DENSE_RANK(), NTILE()
+- Running Totals with SUM(), Moving Averages with AVG()
+- LAG() and LEAD() for Time Series Analysis
+- Frame Clauses (ROWS vs RANGE)
+- Complex Business Analytics
+
+#### **18_Common_Table_Expressions**
+- Non-Recursive CTEs for Complex Queries
+- Recursive CTEs for Hierarchical Data
+- Employee Hierarchies and Bill of Materials
+- CTEs with Window Functions
+- Performance Optimization with CTEs
+
+#### **19_Performance_Tuning**
+- Query Execution Plan Analysis
+- Index Optimization Strategies
+- Query Rewriting Techniques
+- Database Configuration Tuning
+- Monitoring and Troubleshooting
+- Partitioning and Materialized Views
+
+#### **20_Advanced_SQL_Techniques**
+- Pivoting and Unpivoting Data
+- Dynamic SQL Generation
+- Full-Text Search Implementation
+- JSON/XML Data Handling
+- Advanced Analytics and Business Intelligence
+- Complex Stored Procedures
+
 ## Phase 6: Normalization & Functional Dependencies
 
 **Goal:** Minimize data redundancy and ensure data consistency.
