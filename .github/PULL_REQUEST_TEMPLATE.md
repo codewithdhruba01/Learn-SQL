@@ -1,15 +1,15 @@
-## 📝 Pull Request Description
+## Pull Request Description
 
-### 🎯 Type of Change
+### Type of Change
 <!-- What type of change does this PR introduce? -->
-- [ ] 🐛 Bug fix (non-breaking change which fixes an issue)
-- [ ] ✨ New feature (non-breaking change which adds functionality)
-- [ ] 💥 Breaking change (fix or feature that would cause existing functionality to not work as expected)
-- [ ] 📚 Documentation update
-- [ ] 🎨 Style/Design improvement
-- [ ] 🧹 Code refactoring
-- [ ] ✅ Test addition/modification
-- [ ] 🔧 Configuration change
+- [ ] Bug fix (non-breaking change which fixes an issue)
+- [ ] New feature (non-breaking change which adds functionality)
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected)
+- [ ] Documentation update
+- [ ] Style/Design improvement
+- [ ] Code refactoring
+- [ ] Test addition/modification
+- [ ] Configuration change
 
 ### 📋 Changes Made
 <!-- List the changes you made in detail -->
@@ -23,7 +23,7 @@
 2. **Change 2**: Detailed description
 3. **Change 3**: Detailed description
 
-### 🧪 Testing
+### Testing
 <!-- How have you tested your changes? -->
 
 #### Manual Testing:
@@ -50,7 +50,7 @@
 Closes #issue_number
 Fixes #issue_number
 
-### 🎯 Impact Assessment
+### Impact Assessment
 <!-- How does this change affect users? -->
 
 #### User Impact:
@@ -63,7 +63,7 @@ Fixes #issue_number
 - [ ] No performance impact
 - [ ] May impact performance (explain)
 
-### ✅ Checklist
+### Checklist
 <!-- Mark completed items with [x] -->
 
 #### General:
@@ -90,10 +90,10 @@ Fixes #issue_number
 - [ ] API documentation updated
 - [ ] User-facing documentation updated
 
-### 📸 Screenshots/Examples
+### Screenshots/Examples
 <!-- If applicable, add screenshots or examples -->
 
-### 🔮 Future Considerations
+### Future Considerations
 <!-- Any follow-up work or future enhancements -->
 
 ### 🤝 Reviewers
