@@ -1,0 +1,53 @@
+{
+  "name": "sql-learning-repository",
+  "version": "1.0.0",
+  "description": "Comprehensive SQL learning materials with practical examples and exercises",
+  "main": "index.js",
+  "scripts": {
+    "lint": "markdownlint '**/*.md' --ignore node_modules",
+    "lint:fix": "markdownlint '**/*.md' --ignore node_modules --fix",
+    "test-links": "find . -name '*.md' -not -path './node_modules/*' -exec markdown-link-check {} \\;",
+    "validate": "npm run lint && npm run test-links && npm run validate-structure",
+    "validate-structure": "node scripts/validate-structure.js",
+    "format": "prettier --write '**/*.md'",
+    "check-format": "prettier --check '**/*.md'",
+    "test": "npm run validate",
+    "prepare": "husky install"
+  },
+  "keywords": [
+    "sql",
+    "database",
+    "learning",
+    "mysql",
+    "postgresql",
+    "tutorial",
+    "education"
+  ],
+  "author": "SQL Learning Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/sql-learning-repo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/sql-learning-repo/issues"
+  },
+  "homepage": "https://github.com/username/sql-learning-repo#readme",
+  "devDependencies": {
+    "husky": "^8.0.0",
+    "lint-staged": "^13.0.0",
+    "markdown-link-check": "^3.10.0",
+    "markdownlint": "^0.27.0",
+    "markdownlint-cli": "^0.33.0",
+    "prettier": "^2.8.0"
+  },
+  "lint-staged": {
+    "*.md": [
+      "markdownlint --fix",
+      "prettier --write"
+    ]
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}

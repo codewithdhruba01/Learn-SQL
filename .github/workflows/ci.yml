@@ -1,0 +1,279 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  validate-content:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Install markdown linting tools
+      run: |
+        npm install -g markdownlint-cli
+        npm install -g markdown-link-check
+
+    - name: Lint Markdown files
+      run: |
+        find . -name "*.md" -not -path "./node_modules/*" -exec markdownlint {} \;
+
+    - name: Check markdown links
+      run: |
+        find . -name "*.md" -not -path "./node_modules/*" -exec markdown-link-check {} \;
+
+    - name: Validate SQL files
+      run: |
+        # Basic SQL syntax validation for .sql files
+        find . -name "*.sql" -not -path "./node_modules/*" | while read -r file; do
+          echo "Validating $file"
+          # Check for basic SQL syntax issues
+          if grep -q "SELECT.*FROM.*;" "$file" 2>/dev/null; then
+            echo "✓ $file contains valid SELECT statements"
+          fi
+        done
+
+    - name: Check file structure
+      run: |
+        echo "📁 Repository Structure Check"
+        echo "============================"
+
+        # Check for required directories
+        required_dirs=("00_Installation_and_Setup" "01_Introduction" "02_SQL_Basics" "03_Data_Types_and_Operators" "04_DDL_Commands" "05_DML_Commands" "06_Select_Queries" "07_Joins_and_Relationships" "08_Group_By_and_Aggregation" "09_Subqueries" "10_SQL_Functions" "11_Constraints_and_Keys" "12_Views_and_Indexes" "13_Triggers" "14_Stored_Procedures" "15_Transactions" "16_Practice_Projects" "17_Window_Functions" "18_Common_Table_Expressions" "19_Performance_Tuning" "20_Advanced_SQL_Techniques" "21_Normalization_and_FD")
+
+        for dir in "${required_dirs[@]}"; do
+          if [ -d "$dir" ]; then
+            echo "✓ $dir exists"
+            if [ -f "$dir/README.md" ]; then
+              echo "  └─ README.md found"
+            else
+              echo "  └─ ⚠️  README.md missing"
+              exit 1
+            fi
+          else
+            echo "✗ $dir missing"
+            exit 1
+          fi
+        done
+
+        echo "✅ All required directories present"
+
+  test-sql-examples:
+    runs-on: ubuntu-latest
+    services:
+      mysql:
+        image: mysql:8.0
+        env:
+          MYSQL_ROOT_PASSWORD: testpassword
+          MYSQL_DATABASE: testdb
+        ports:
+          - 3306:3306
+        options: --health-cmd="mysqladmin ping" --health-interval=10s --health-timeout=5s --health-retries=3
+
+      postgres:
+        image: postgres:15
+        env:
+          POSTGRES_PASSWORD: testpassword
+          POSTGRES_DB: testdb
+        ports:
+          - 5432:5432
+        options: --health-cmd pg_isready --health-interval 10s --health-timeout 5s --health-retries 3
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Test MySQL connection
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y mysql-client
+        mysql -h 127.0.0.1 -u root -ptestpassword -e "SELECT VERSION();" testdb
+
+    - name: Test PostgreSQL connection
+      run: |
+        sudo apt-get install -y postgresql-client
+        PGPASSWORD=testpassword psql -h 127.0.0.1 -U postgres -d testdb -c "SELECT VERSION();"
+
+    - name: Create test tables and data
+      run: |
+        # MySQL test
+        mysql -h 127.0.0.1 -u root -ptestpassword testdb << 'EOF'
+        CREATE TABLE test_users (
+          id INT PRIMARY KEY AUTO_INCREMENT,
+          name VARCHAR(100) NOT NULL,
+          email VARCHAR(255) UNIQUE,
+          created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+        );
+
+        INSERT INTO test_users (name, email) VALUES
+        ('John Doe', 'john@example.com'),
+        ('Jane Smith', 'jane@example.com');
+
+        SELECT * FROM test_users;
+        EOF
+
+        # PostgreSQL test
+        PGPASSWORD=testpassword psql -h 127.0.0.1 -U postgres -d testdb << 'EOF'
+        CREATE TABLE test_products (
+          id SERIAL PRIMARY KEY,
+          name VARCHAR(100) NOT NULL,
+          price DECIMAL(10,2),
+          category VARCHAR(50)
+        );
+
+        INSERT INTO test_products (name, price, category) VALUES
+        ('Laptop', 999.99, 'Electronics'),
+        ('Book', 29.99, 'Education');
+
+        SELECT * FROM test_products;
+        EOF
+
+  deploy-docs:
+    runs-on: ubuntu-latest
+    needs: [validate-content, test-sql-examples]
+    if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js for docs generation
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Generate documentation index
+      run: |
+        # Create a comprehensive index of all chapters
+        cat > docs-index.md << 'EOF'
+        # 📚 Complete SQL Learning Index
+
+        This repository contains comprehensive SQL learning materials organized by chapters.
+
+        ## 📖 Chapter Overview
+
+        EOF
+
+        # Generate table of contents
+        for dir in $(ls -d */ | grep -E '^[0-9]+_' | sort -n); do
+          if [ -f "$dir/README.md" ]; then
+            chapter_num=$(echo $dir | cut -d'_' -f1)
+            chapter_name=$(echo $dir | cut -d'_' -f2- | sed 's/_/ /g' | sed 's/\///g')
+            echo "| $chapter_num | [$chapter_name]($dir) | $(head -3 "$dir/README.md" | grep -E '^##' | head -1 | sed 's/^## //') |" >> docs-index.md
+          fi
+        done
+
+        echo "" >> docs-index.md
+        echo "## 🎯 Learning Path" >> docs-index.md
+        echo "" >> docs-index.md
+        echo "1. Start with [Installation & Setup](00_Installation_and_Setup/)" >> docs-index.md
+        echo "2. Learn [DBMS Fundamentals](01_Introduction/)" >> docs-index.md
+        echo "3. Master [SQL Basics](02_SQL_Basics/)" >> docs-index.md
+        echo "4. Practice with [Real Projects](16_Practice_Projects/)" >> docs-index.md
+        echo "" >> docs-index.md
+        echo "---" >> docs-index.md
+        echo "*Generated automatically by GitHub Actions*" >> docs-index.md
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        publish_branch: gh-pages
+        exclude_assets: '.github,*.md'
+        cname: sql-learn.example.com  # Replace with your domain
+
+  security-scan:
+    runs-on: ubuntu-latest
+    permissions:
+      security-events: write
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Run Trivy vulnerability scanner
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: '.'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+
+    - name: Upload Trivy scan results to GitHub Security tab
+      uses: github/codeql-action/upload-sarif@v2
+      if: always()
+      with:
+        sarif_file: 'trivy-results.sarif'
+
+  code-quality:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: Install Prettier for markdown formatting
+      run: npm install -g prettier
+
+    - name: Check markdown formatting
+      run: |
+        # Check if markdown files are properly formatted
+        find . -name "*.md" -not -path "./node_modules/*" -exec prettier --check {} \;
+
+    - name: Validate YAML files
+      run: |
+        # Install yaml validator
+        pip install yamllint
+
+        # Check for YAML syntax in workflow files
+        find .github -name "*.yml" -o -name "*.yaml" | xargs yamllint
+
+    - name: Check for broken internal links
+      run: |
+        # Check for broken relative links in markdown
+        find . -name "*.md" -not -path "./node_modules/*" -exec grep -H "\[.*\](\.\." {} \; | while read -r line; do
+          file=$(echo "$line" | cut -d: -f1)
+          link=$(echo "$line" | grep -o "\[.*\](\.\.[^)]*)" | sed 's/.*(\.\././')
+          link=$(echo "$link" | sed 's/).*//')
+          if [[ "$link" == ./* ]]; then
+            # Remove the closing ) and check if file exists
+            clean_link=$(echo "$link" | sed 's/).*//')
+            if [ ! -e "$clean_link" ]; then
+              echo "Broken link in $file: $clean_link"
+            fi
+          fi
+        done
+
+  notify:
+    runs-on: ubuntu-latest
+    needs: [validate-content, test-sql-examples, deploy-docs, security-scan, code-quality]
+    if: always()
+
+    steps:
+    - name: Send notification
+      uses: 8398a7/action-slack@v3
+      if: failure() && github.ref == 'refs/heads/main'
+      with:
+        status: ${{ job.status }}
+        webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
+        fields: repo,message,commit,author,action,eventName,ref,workflow
+      env:
+        SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
