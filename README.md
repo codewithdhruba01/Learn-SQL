@@ -54,12 +54,15 @@ This roadmap will guide you through the entire Database Management System (DBMS)
 
 **Goal:** Minimize data redundancy and ensure data consistency.
 
--  Functional Dependencies
--  1NF, 2NF, 3NF
--  BCNF, 4NF
--  Decomposition (Lossless, Dependency Preserving)
+-  Functional Dependencies (FDs, Transitive, Partial)
+-  1NF (First Normal Form) - Atomic Values
+-  2NF (Second Normal Form) - Full Dependencies
+-  3NF (Third Normal Form) - Direct Dependencies
+-  BCNF (Boyce-Codd Normal Form) - Candidate Keys
+-  4NF (Fourth Normal Form) - Multivalued Dependencies
+-  5NF (Fifth Normal Form) - Join Dependencies
 
-> Practice normalization with sample tables.
+> **[Complete Normalization Guide → Chapter 21](21_Normalization_and_FD/)**
 
 
 ## Phase 7: Transactions & Concurrency Control
