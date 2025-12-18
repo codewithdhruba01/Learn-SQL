@@ -1,10 +1,10 @@
-# 🤝 Contributing to SQL Learning Repository
+# Contributing to SQL Learning Repository
 
 ## 🎉 Welcome Contributors!
 
 Thank you for your interest in contributing to this comprehensive SQL learning repository! We welcome contributions from developers, educators, and SQL enthusiasts of all skill levels.
 
-## 📋 Quick Start
+## Quick Start
 
 ### 1. **Find Something to Work On**
 - Check [open issues](https://github.com/username/repo/issues) for tasks
@@ -34,56 +34,56 @@ npm run validate
 - Push to your fork: `git push origin feature/your-feature-name`
 - Create a Pull Request using our template
 
-## 🎯 Types of Contributions
+## Types of Contributions
 
-### 📝 Content Contributions
+### Content Contributions
 - **New Examples**: Add practical SQL examples
 - **Explanations**: Improve clarity of complex topics
 - **Corrections**: Fix technical inaccuracies
 - **Exercises**: Create practice problems with solutions
 
-### 🛠️ Technical Contributions
+### Technical Contributions
 - **CI/CD Improvements**: Enhance GitHub Actions workflows
 - **Documentation**: Improve README and guides
 - **Tools**: Add helpful scripts or utilities
 - **Testing**: Create automated tests for SQL examples
 
-### 🎨 Design Contributions
+### Design Contributions
 - **README Enhancement**: Improve documentation presentation
 - **Templates**: Create better issue/PR templates
 - **Organization**: Reorganize content for better flow
 - **Accessibility**: Improve content accessibility
 
-## 📚 Content Guidelines
+## Content Guidelines
 
-### ✅ Writing Standards
+### Writing Standards
 - **Clear and Concise**: Use simple language, avoid jargon
 - **Practical Focus**: Include real-world examples
 - **Progressive Difficulty**: Start simple, build complexity
 - **Complete Examples**: Working SQL code with explanations
 
-### 🏗️ Structure Guidelines
+### Structure Guidelines
 - **Chapter Organization**: Follow existing chapter structure
 - **File Naming**: Use descriptive names (e.g., `06_Select_Queries/`)
 - **README Files**: Every folder must have a comprehensive README.md
 - **Cross-References**: Link related chapters appropriately
 
-### 💻 Code Standards
+### Code Standards
 - **SQL Formatting**: Use consistent indentation and capitalization
 - **Comments**: Explain complex queries and business logic
 - **Testing**: Verify examples work on MySQL/PostgreSQL/SQLite
 - **Performance**: Consider query optimization
 
-## 🔍 Quality Assurance
+## Quality Assurance
 
-### ✅ Before Submitting
+### Before Submitting
 - [ ] **Test Your Changes**: Run examples on actual databases
 - [ ] **Markdown Validation**: Check formatting with markdown linter
 - [ ] **Link Verification**: Ensure all links work correctly
 - [ ] **Grammar Check**: Proofread for spelling and grammar
 - [ ] **Consistency**: Follow existing style and structure
 
-### 🧪 Automated Checks
+### Automated Checks
 Our CI/CD pipeline will automatically check:
 - Markdown formatting and syntax
 - Broken links and references
@@ -91,7 +91,7 @@ Our CI/CD pipeline will automatically check:
 - Content structure compliance
 - Security vulnerabilities
 
-## 📖 Detailed Guidelines by Contribution Type
+## Detailed Guidelines by Contribution Type
 
 ### Adding New Content
 
@@ -102,28 +102,28 @@ Our CI/CD pipeline will automatically check:
 
 #### 2. **Content Structure**
 ```markdown
-# 🎯 Chapter Title
+# Chapter Title
 
 ## Brief Introduction
 
-### 📋 Subtopic 1
+### Subtopic 1
 - Explanation
 - Examples
 - Practice exercises
 
-### 🛠️ Subtopic 2
+### Subtopic 2
 - Code examples
 - Best practices
 - Common pitfalls
 
-### 📚 Practice Exercises
+### Practice Exercises
 - Hands-on problems
 - Solutions with explanations
 ```
 
 #### 3. **Example Quality**
 ```sql
--- ✅ Good: Clear, documented, practical
+-- Good: Clear, documented, practical
 SELECT
     customer_id,
     COUNT(*) as total_orders,
@@ -134,7 +134,7 @@ GROUP BY customer_id
 HAVING COUNT(*) > 3
 ORDER BY lifetime_value DESC;
 
--- ❌ Bad: Unclear, undocumented
+-- Bad: Unclear, undocumented
 select id,count(*),sum(amt) from ord where dt>='2024-01-01' group by id having count(*)>3 order by sum(amt) desc;
 ```
 
@@ -166,7 +166,7 @@ select id,count(*),sum(amt) from ord where dt>='2024-01-01' group by id having c
 - Improved validation scripts
 - Enhanced documentation tools
 
-## 🚨 Issue Reporting
+## Issue Reporting
 
 ### For Content Issues
 - Use [Content Issue Template](.github/ISSUE_TEMPLATE/content-issue.md)
@@ -186,7 +186,7 @@ select id,count(*),sum(amt) from ord where dt>='2024-01-01' group by id having c
 - Provide implementation suggestions
 - Include use cases and benefits
 
-## 📋 Pull Request Process
+## Pull Request Process
 
 ### 1. **Preparation**
 - Ensure your fork is up-to-date with main branch
@@ -217,7 +217,7 @@ select id,count(*),sum(amt) from ord where dt>='2024-01-01' group by id having c
 - Squash merge with clean commit message
 - Branch deleted after merge
 
-## 🎖️ Recognition
+## Recognition
 
 ### Contributor Recognition
 - All contributors listed in repository
@@ -226,11 +226,11 @@ select id,count(*),sum(amt) from ord where dt>='2024-01-01' group by id having c
 - Community acknowledgments
 
 ### Contribution Levels
-- **🥉 Casual**: Small fixes, documentation improvements
-- **🥈 Regular**: Feature additions, content enhancements
-- **🥇 Core**: Major features, architectural improvements
+- **Casual**: Small fixes, documentation improvements
+- **Regular**: Feature additions, content enhancements
+- **Core**: Major features, architectural improvements
 
-## 📞 Getting Help
+## Getting Help
 
 ### Community Support
 - **GitHub Discussions**: General questions and discussions
@@ -242,7 +242,7 @@ select id,count(*),sum(amt) from ord where dt>='2024-01-01' group by id having c
 - **Code Reviews**: Get feedback on your contributions
 - **Office Hours**: Regular community calls for contributors
 
-## 📜 License and Attribution
+## License and Attribution
 
 By contributing to this project, you agree that your contributions will be licensed under the same license as the project (MIT License).
 
