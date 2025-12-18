@@ -157,11 +157,11 @@ jobs:
       run: |
         # Create a comprehensive index of all chapters
         cat > docs-index.md << 'EOF'
-        # 📚 Complete SQL Learning Index
+        # Complete SQL Learning Index
 
         This repository contains comprehensive SQL learning materials organized by chapters.
 
-        ## 📖 Chapter Overview
+        ## Chapter Overview
 
         EOF
 
@@ -175,7 +175,7 @@ jobs:
         done
 
         echo "" >> docs-index.md
-        echo "## 🎯 Learning Path" >> docs-index.md
+        echo "## Learning Path" >> docs-index.md
         echo "" >> docs-index.md
         echo "1. Start with [Installation & Setup](00_Installation_and_Setup/)" >> docs-index.md
         echo "2. Learn [DBMS Fundamentals](01_Introduction/)" >> docs-index.md
