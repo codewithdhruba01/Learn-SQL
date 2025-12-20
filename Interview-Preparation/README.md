@@ -167,7 +167,7 @@ SELECT * FROM employees ORDER BY department ASC, salary DESC;
 
 ---
 
-## 🔗 Section 4: Joins & Relationships
+## Section 4: Joins & Relationships
 
 ### 23. What are the different types of JOINs in SQL?
 **Answer:**
@@ -238,7 +238,6 @@ SELECT * FROM employees e
 WHERE NOT EXISTS (SELECT 1 FROM departments d WHERE d.id = e.department_id);
 ```
 
----
 
 ## Section 5: Subqueries & CTEs
 
@@ -451,7 +450,7 @@ END;
 ### 50. How do you optimize SQL queries?
 **Answer:**
 1. **Use appropriate indexes**: On WHERE, JOIN, and ORDER BY columns
-2. **Avoid SELECT *** : Specify only needed columns
+2. **Avoid SELECT** : Specify only needed columns
 3. **Use EXISTS instead of IN** for subqueries
 4. **Use UNION ALL instead of UNION** when possible
 5. **Limit result sets** with WHERE clauses early
@@ -488,4 +487,4 @@ END;
 
 ---
 
-*Happy Learning! Remember, practice is key to mastering SQL. Try implementing these concepts in your own database projects.*
+>Happy Learning! Remember, practice is key to mastering SQL. Try implementing these concepts in your own database projects.
