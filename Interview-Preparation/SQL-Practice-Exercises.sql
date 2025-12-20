@@ -1,10 +1,3 @@
--- 🎯 SQL Interview Practice Exercises
--- Based on the 50 most important SQL interview questions
-
--- ===========================================
--- SETUP: Create sample database and tables
--- ===========================================
-
 -- Create database
 CREATE DATABASE IF NOT EXISTS interview_practice;
 USE interview_practice;
