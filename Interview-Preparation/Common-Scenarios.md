@@ -226,4 +226,4 @@ SELECT * FROM employees ORDER BY salary DESC LIMIT 10;
 
 ---
 
-*Remember: Communication is key! Explain your approach clearly and show you understand the business requirements behind the technical questions.*
+> *Remember: Communication is key! Explain your approach clearly and show you understand the business requirements behind the technical questions.*
