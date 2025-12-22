@@ -1,6 +1,6 @@
-# 🛠️ Chapter 0: Installation and Setup Guide - Getting Started with Databases
+# Chapter 0: Installation and Setup Guide - Getting Started with Databases
 
-## 🎯 Why Proper Installation Matters?
+## Why Proper Installation Matters?
 
 **Setting up your database environment correctly** is crucial for:
 - **Learning effectively**: Practice with real databases
@@ -73,7 +73,7 @@ sudo apt install sqlitebrowser
 
 ---
 
-## 🍎 macOS Installation
+## macOS Installation
 
 ### MySQL Installation (using Homebrew)
 
@@ -290,7 +290,7 @@ code --install-extension cweijan.vscode-mysql-client2
 
 ---
 
-## ⚙️ Database Configuration
+## Database Configuration
 
 ### MySQL Configuration
 
@@ -403,7 +403,7 @@ sqlite3 database.db ".backup 'backup.db'"
 
 ---
 
-## 🧪 Testing Your Installation
+## Testing Your Installation
 
 ### MySQL Test
 
@@ -488,7 +488,7 @@ rm test.db
 
 ---
 
-## 🚀 Getting Started with Practice
+##  Getting Started with Practice
 
 ### Sample Database Setup
 
@@ -532,7 +532,7 @@ INSERT INTO employees (first_name, last_name, email, department_id, salary, hire
 
 ---
 
-## 🆘 Troubleshooting Common Issues
+##  Troubleshooting Common Issues
 
 ### MySQL Issues
 
@@ -607,14 +607,3 @@ sudo netstat -tulpn | grep :5432  # PostgreSQL
 5. **Practice regularly** with real databases
 
 **Remember**: The best way to learn SQL is by doing. Start simple, build gradually, and practice consistently!
-
----
-
-## 📞 Support and Community
-
-- **Stack Overflow**: sql tag for questions
-- **Reddit**: r/SQL, r/database, r/mysql, r/PostgreSQL
-- **GitHub**: Database-related projects and issues
-- **Official Forums**: Each database has community forums
-
-**Happy learning!** 🎉
